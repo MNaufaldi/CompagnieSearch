@@ -1,0 +1,60 @@
+Build started at 2020-05-07T10:13:18.345163
+Main binary: /usr/bin/python
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 0.54.1
+Source dir: /home/arvin/Documents/github/CompagnieSearch
+Build dir: /home/arvin/Documents/github/CompagnieSearch/builddir
+Build type: native build
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Project name: com.github.IlzJokerzlI.CompagnieSearch
+Project version: 0.1.0
+None of 'CXX' are defined in the environment, not changing global flags.
+None of 'CXXFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/arvin/Documents/github/CompagnieSearch/builddir/meson-private/sanitycheckcpp.cc -o /home/arvin/Documents/github/CompagnieSearch/builddir/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/arvin/Documents/github/CompagnieSearch/builddir/meson-private/sanitycheckcpp.exe
+C++ compiler for the build machine: c++ (gcc 9.3.0 "c++ (Arch Linux 9.3.0-1) 9.3.0")
+C++ linker for the build machine: c++ ld.bfd 2.34
+None of 'AR' are defined in the environment, not changing global flags.
+None of 'CXX' are defined in the environment, not changing global flags.
+None of 'CXXFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/arvin/Documents/github/CompagnieSearch/builddir/meson-private/sanitycheckcpp.cc -o /home/arvin/Documents/github/CompagnieSearch/builddir/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/arvin/Documents/github/CompagnieSearch/builddir/meson-private/sanitycheckcpp.exe
+C++ compiler for the host machine: c++ (gcc 9.3.0 "c++ (Arch Linux 9.3.0-1) 9.3.0")
+C++ linker for the host machine: c++ ld.bfd 2.34
+None of 'AR' are defined in the environment, not changing global flags.
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Build targets in project: 0
+
+Found ninja-1.10.0 at /usr/bin/ninja
+None of 'STRIP' are defined in the environment, not changing global flags.
+None of 'STRIP' are defined in the environment, not changing global flags.
