@@ -1,14 +1,14 @@
 # Compagnie Search Program <Version 0.1.0>
 
 ### Introduction
-<pre> 
+<p> 
 	Compagnie Search Program is a c++ based designed for data search especially employees in a company. It uses various algorithm, mainly hashtable and AVL Binary Search.
-</pre>
+</p>
 
 ### Focuses
-<pre>
-	There a few aims of this program:
-</pre>
+<p>
+	There are a few aims of this program:
+</p>
 
 <ol>
 	<li>Efficiency in reading data from file (.txt)</li>
