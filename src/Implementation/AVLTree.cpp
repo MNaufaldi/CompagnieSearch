@@ -4,6 +4,8 @@
 using std::cout;
 using std::endl;
 
+
+//Get the height of a node
 int AVLTree::getHeight(Node *node) {
     int lHeight = (node && node->lPtr) ? node->lPtr->height : 0;
     int rHeight = (node && node->rPtr) ? node->rPtr->height : 0;
@@ -11,6 +13,7 @@ int AVLTree::getHeight(Node *node) {
 }
 
 
+//Get the balance factor for determining rotation action
 int AVLTree::getBalanceFactor(Node *node) {
     int lHeight = (node && node->lPtr) ? node->lPtr->height : 0;
     int rHeight = (node && node->rPtr) ? node->rPtr->height : 0;
@@ -93,12 +96,12 @@ Node *AVLTree::rotateToRToL(Node *node) {
 }
 
 
+//Inserting value
 Node *AVLTree::insert(Node *node, int value) {
     if (this->root == nullptr) {
         this->root = new Node(value);
         return this->root;
     }
-
 
     if (node == nullptr) {
         node = new Node(value);
@@ -109,6 +112,12 @@ Node *AVLTree::insert(Node *node, int value) {
         node->lPtr = insert(node->lPtr, value);
     } else if (value > node->value) {
         node->rPtr = insert(node->rPtr, value);
+    } else {
+        Node *tempNode = node
+        while(tempNode->cPtr) {
+            tempNode = tempNode->cPtr;
+        }
+        tempNode->cPtr = new Node(value);
     }
 
     node->height = this->getHeight(node);
@@ -139,6 +148,7 @@ int AVLTree::insert(int value) {
 }
 
 
+//Get the root of the tree
 Node *AVLTree::getRoot() {
     return this->root;
 }
