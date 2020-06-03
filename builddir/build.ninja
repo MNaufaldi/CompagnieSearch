@@ -6,7 +6,17 @@ ninja_required_version = 1.5.1
 
 # Rules for compiling.
 
+rule cpp_COMPILER
+ command = c++ $ARGS -MD -MQ $out -MF '$DEPFILE' -o $out -c $in
+ deps = gcc
+ depfile = $DEPFILE
+ description = Compiling C++ object $out
+
 # Rules for linking.
+
+rule cpp_LINKER
+ command = c++ $ARGS -o $out $in $LINK_ARGS
+ description = Linking target $out
 
 # Other rules
 
@@ -25,6 +35,21 @@ rule REGENERATE_BUILD
 build PHONY: phony 
 
 # Build rules for targets
+
+build src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Main.cpp.o: cpp_COMPILER ../src/Main.cpp
+ DEPFILE = src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Main.cpp.o.d
+ ARGS = -Isrc/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++14 -g
+
+build src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Implementation_AVLTree.cpp.o: cpp_COMPILER ../src/Implementation/AVLTree.cpp
+ DEPFILE = src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Implementation_AVLTree.cpp.o.d
+ ARGS = -Isrc/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++14 -g
+
+build src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Implementation_Node.cpp.o: cpp_COMPILER ../src/Implementation/Node.cpp
+ DEPFILE = src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Implementation_Node.cpp.o.d
+ ARGS = -Isrc/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++14 -g
+
+build src/com.github.IlzJokerzlI.CompagnieSearch: cpp_LINKER src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Main.cpp.o src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Implementation_AVLTree.cpp.o src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Implementation_Node.cpp.o
+ LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined
 
 # Test rules
 
@@ -78,7 +103,7 @@ build meson-uninstall: CUSTOM_COMMAND PHONY
 
 build uninstall: phony meson-uninstall
 
-build all: phony 
+build all: phony src/com.github.IlzJokerzlI.CompagnieSearch
 
 build clean: phony meson-clean
 

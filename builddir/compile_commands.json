@@ -1,2 +1,20 @@
 [
+  {
+    "directory": "/home/arvin/Documents/github/CompagnieSearch/builddir",
+    "command": "c++ -Isrc/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++14 -g -MD -MQ 'src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Main.cpp.o' -MF 'src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Main.cpp.o.d' -o 'src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Main.cpp.o' -c ../src/Main.cpp",
+    "file": "../src/Main.cpp",
+    "output": "src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Main.cpp.o"
+  },
+  {
+    "directory": "/home/arvin/Documents/github/CompagnieSearch/builddir",
+    "command": "c++ -Isrc/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++14 -g -MD -MQ 'src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Implementation_AVLTree.cpp.o' -MF 'src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Implementation_AVLTree.cpp.o.d' -o 'src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Implementation_AVLTree.cpp.o' -c ../src/Implementation/AVLTree.cpp",
+    "file": "../src/Implementation/AVLTree.cpp",
+    "output": "src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Implementation_AVLTree.cpp.o"
+  },
+  {
+    "directory": "/home/arvin/Documents/github/CompagnieSearch/builddir",
+    "command": "c++ -Isrc/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe -Isrc -I../src -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++14 -g -MD -MQ 'src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Implementation_Node.cpp.o' -MF 'src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Implementation_Node.cpp.o.d' -o 'src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Implementation_Node.cpp.o' -c ../src/Implementation/Node.cpp",
+    "file": "../src/Implementation/Node.cpp",
+    "output": "src/25a6634@@com.github.IlzJokerzlI.CompagnieSearch@exe/Implementation_Node.cpp.o"
+  }
 ]
